@@ -13,7 +13,7 @@ android {
 
     defaultConfig {
         // change this applicationId & versionName & versionCode to your own values
-        applicationId "nsofts.streambox"
+        applicationId "liberty.vision.net"
         minSdk 23
         targetSdk 36
         versionCode 11
