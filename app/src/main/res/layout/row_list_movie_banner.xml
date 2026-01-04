@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_2sdp">
+
+    <!-- Poster Image -->
+    <androidx.nemosofts.material.ImageViewRound
+        android:id="@+id/iv_movie"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:adjustViewBounds="true"
+        android:alpha="0.3"
+        android:src="@color/ns_yellow_50"
+        android:scaleType="centerCrop"
+        app:irv_border_color="#1AFFFFFF"
+        app:irv_border_width="@dimen/_1ssp"
+        app:irv_corner_radius="@dimen/_3sdp" />
+
+    <androidx.nemosofts.material.ImageViewRound
+        android:id="@+id/iv_home_post"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_alignBottom="@+id/iv_movie"
+        android:layout_alignTop="@+id/iv_movie"
+        android:layout_alignStart="@+id/iv_movie"
+        android:layout_margin="@dimen/_15sdp"
+        android:scaleType="centerCrop"
+        android:src="@color/ns_yellow_100"
+        app:irv_corner_radius="@dimen/_3sdp" />
+
+    <RelativeLayout
+        android:layout_marginEnd="@dimen/_10ssp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/iv_home_post"
+        android:layout_alignBottom="@+id/iv_home_post"
+        android:layout_toEndOf="@+id/iv_home_post"
+        android:orientation="vertical">
+
+        <!-- Movie Title Overlay -->
+        <TextView
+            android:id="@+id/tv_movie_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="@dimen/_120sdp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@string/app_name"
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/_16ssp" />
+
+        <!-- Rating (Star + Number) -->
+        <LinearLayout
+            android:layout_below="@+id/tv_movie_title"
+            android:id="@+id/ll_card_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/bg_star"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_2sdp"
+            android:paddingEnd="@dimen/_2sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_11sdp"
+                android:layout_height="@dimen/_11sdp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_star_border"
+                app:tint="?nsWhite" />
+
+            <TextView
+                android:id="@+id/tv_movie_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_1sdp"
+                android:text="1"
+                android:textColor="?nsWhite"
+                android:textSize="@dimen/_8ssp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!-- Focus Background -->
+    <View
+        android:id="@+id/fd_movie_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@id/iv_movie"
+        android:background="@drawable/focused_movie"
+        android:focusable="true"
+        android:focusableInTouchMode="false" />
+
+</RelativeLayout>

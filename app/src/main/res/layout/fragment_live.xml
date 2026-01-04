@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_1sdp">
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_live_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_1sdp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:ignore="NestedWeights">
+
+            <RelativeLayout
+                android:backgroundTint="#9EFFFFFF"
+                android:background="@drawable/edt_focused"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_2sdp">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:hint="@string/search_categories"
+                    android:imeOptions="actionSearch|flagNoFullscreen"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:paddingStart="@dimen/_3sdp"
+                    android:paddingEnd="@dimen/_3sdp"
+                    android:textColor="?nsTitle"
+                    android:textColorHint="?nsTitleSub"
+                    android:textSize="@dimen/_11ssp"
+                    android:background="@drawable/focused_edt"
+                    android:drawableStart="@drawable/ic_search"
+                    android:drawablePadding="@dimen/_3sdp"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:privateImeOptions="horizontalAlignment=right"/>
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_cat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingBottom="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_2sdp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:background="@drawable/bg_line"
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="match_parent"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.8">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingBottom="@dimen/_20sdp" />
+
+            <FrameLayout
+                android:id="@+id/fl_empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="?attr/actionBarSize"
+                android:visibility="gone" />
+
+            <androidx.nemosofts.material.ProgressBarView
+                android:id="@+id/pb"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_centerInParent="true"
+                android:indeterminate="true"
+                android:visibility="gone"
+                app:pb_color="#FFee44"
+                app:pb_colors="@array/progress_colors"
+                app:pb_max_sweep_angle="300"
+                app:pb_min_sweep_angle="10"
+                app:pb_rotation_speed="1.0"
+                app:pb_stroke_width="@dimen/_2sdp"
+                app:pb_sweep_speed="1.0" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <androidx.nemosofts.material.IconTextView
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:id="@+id/btn_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/ic_file_download_not"
+        app:iconSize="@dimen/_18sdp"
+        app:iconPadding="@dimen/_6sdp"
+        app:iconPosition="start"
+        app:iconColor="?nsWhite"
+        android:text="@string/downloaded"
+        android:lines="1"
+        android:textColor="?nsWhite"
+        android:textSize="@dimen/_14ssp"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingTop="@dimen/_6sdp"
+        android:paddingBottom="@dimen/_6sdp"
+        android:focusable="true"
+        android:focusableInTouchMode="false"
+        android:background="@drawable/focused_add_btn"
+        android:nextFocusUp="@id/rv" />
+
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:id="@+id/pb_download"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:progressTint="?nsPrimary"
+        android:progressBackgroundTint="#00000000"
+        android:max="100"
+        android:progress="0"
+        android:visibility="gone"/>
+
+</RelativeLayout>

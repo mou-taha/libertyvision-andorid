@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/_20sdp"
+    android:paddingEnd="@dimen/_20sdp"
+    android:paddingTop="@dimen/_10sdp"
+    android:paddingBottom="@dimen/_10sdp"
+    android:id="@+id/ll_close"
+    android:focusable="false"
+    android:focusableInTouchMode="false">
+
+    <LinearLayout
+        android:id="@+id/ll_dialog"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/bg_dialog_nenu"
+        android:orientation="vertical"
+        tools:ignore="UselessParent"
+        android:focusable="false"
+        android:focusableInTouchMode="false">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_10sdp"
+            android:clipToPadding="true"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

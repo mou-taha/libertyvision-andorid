@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_10sdp"
+    app:cardBackgroundColor="?nsTitle"
+    app:cardCornerRadius="@dimen/_6sdp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:id="@+id/root_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/focused_btn_ui_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="false"
+        android:orientation="horizontal"
+        android:padding="@dimen/_12sdp">
+
+        <TextView
+            android:id="@+id/tv_profile_initial"
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:background="@drawable/focused_dns_select"
+            android:gravity="center"
+            android:text="V"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_profile_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?nsWhite"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold"
+                tools:text="Demo Profile" />
+
+            <TextView
+                android:id="@+id/tv_profile_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:textColor="?nsTitleSub"
+                android:textSize="@dimen/_10ssp"
+                tools:text="user@example" />
+
+            <TextView
+                android:id="@+id/tv_profile_source"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:textColor="?nsTitleSub"
+                android:textSize="@dimen/_9ssp"
+                tools:text="https://example.com/profile.ovpn" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
