@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_dark"
+    android:background="@drawable/bg_darkx"
     tools:context=".activity.ui.RamadanActivity"
     android:id="@+id/theme_bg">
 
@@ -13,7 +13,7 @@
         android:scaleType="centerCrop"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/bg_dark"
+        android:src="@drawable/bg_darkx"
         android:contentDescription="@string/todo"/>
 
     <ImageView

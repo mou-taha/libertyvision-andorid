@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/bg_dark"
+    android:background="@drawable/bg_darkx"
     tools:context=".activity.ui.MovieUiActivity"
     android:id="@+id/theme_bg">
 
     <ImageView
         android:id="@+id/iv_bg_blur"
         android:scaleType="centerCrop"
-        android:src="@drawable/bg_dark"
+        android:src="@drawable/bg_darkx"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:contentDescription="@string/todo"/>
@@ -21,7 +21,7 @@
         android:layout_alignParentEnd="true"
         android:id="@+id/iv_bg_poster"
         android:scaleType="centerCrop"
-        android:src="@drawable/bg_dark"
+        android:src="@drawable/bg_darkx"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:contentDescription="@string/todo"/>

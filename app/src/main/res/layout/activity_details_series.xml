@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity.DetailsSeriesActivity"
-    android:background="@drawable/bg_dark"
+    android:background="@drawable/bg_darkx"
     android:id="@+id/theme_bg">
 
     <ImageView
         android:scaleType="centerCrop"
         android:id="@+id/iv_bg_blur"
-        android:src="@drawable/bg_dark"
+        android:src="@drawable/bg_darkx"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:contentDescription="@string/todo" />
@@ -19,7 +19,7 @@
     <ImageView
         android:id="@+id/iv_alpha"
         android:scaleType="centerCrop"
-        android:src="@drawable/bg_dark"
+        android:src="@drawable/bg_darkx"
         android:alpha="0.8"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

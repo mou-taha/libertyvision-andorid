@@ -4,7 +4,7 @@
     android:id="@+id/theme_bg"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_dark">
+    android:background="@drawable/bg_darkx">
 
     <RelativeLayout
         android:layout_width="match_parent"

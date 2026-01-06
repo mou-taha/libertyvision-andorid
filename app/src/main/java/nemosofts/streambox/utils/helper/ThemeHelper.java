@@ -91,7 +91,7 @@ public class ThemeHelper {
                 break;
             case THEME_PAGE_DARK:
             default:
-                themeBgView.setBackgroundResource(R.drawable.bg_dark);
+                themeBgView.setBackgroundResource(R.drawable.bg_darkx);
                 break;
         }
     }
@@ -110,7 +110,7 @@ public class ThemeHelper {
             case THEME_DARK_PANTHER -> R.drawable.bg_dark_panther;
             default -> switch (themePage) {
                 case THEME_PAGE_CLASSIC, THEME_PAGE_GREY, THEME_PAGE_BLUE -> R.drawable.bg_classic;
-                default -> R.drawable.bg_dark;
+                default -> R.drawable.bg_darkx;
             };
         };
     }
