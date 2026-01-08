@@ -100,13 +100,13 @@ public class SelectPlayerActivity extends AppCompatActivity {
     private Collection<? extends ItemSelect> getSelect() {
         ArrayList<ItemSelect> arrayList = new ArrayList<>();
         if (Boolean.TRUE.equals(spHelper.getIsSelect(SPHelper.TAG_SELECT_XUI))){
-            //arrayList.add(new ItemSelect(getString(R.string.login_with_xtream_codes), R.drawable.ic_folder_connection,false));
+            arrayList.add(new ItemSelect(getString(R.string.login_with_xtream_codes), R.drawable.ic_folder_connection,false));
         }
         if (Boolean.TRUE.equals(spHelper.getIsSelect(SPHelper.TAG_SELECT_STREAM))){
-            //arrayList.add(new ItemSelect(getString(R.string._1_stream), R.drawable.ic_mist_line,false));
+            arrayList.add(new ItemSelect(getString(R.string._1_stream), R.drawable.ic_mist_line,false));
         }
         if (Boolean.TRUE.equals(spHelper.getIsSelect(SPHelper.TAG_SELECT_PLAYLIST))){
-           // arrayList.add(new ItemSelect(getString(R.string.m3u_playlist), R.drawable.ic_play_list,false));
+           arrayList.add(new ItemSelect(getString(R.string.m3u_playlist), R.drawable.ic_play_list,false));
         }
         if (Boolean.TRUE.equals(spHelper.getIsSelect(SPHelper.TAG_SELECT_DEVICE))){
             arrayList.add(new ItemSelect(getString(R.string.login_with_device_id), R.drawable.ic_devices,false));
@@ -115,13 +115,13 @@ public class SelectPlayerActivity extends AppCompatActivity {
             arrayList.add(new ItemSelect(getString(R.string.login_with_activation_code), R.drawable.ic_unlock,false));
         }
         if (Boolean.TRUE.equals(spHelper.getIsSelect(SPHelper.TAG_SELECT_SINGLE))){
-          //  arrayList.add(new ItemSelect(getString(R.string.play_single_stream), R.drawable.ic_movie,false));
+           arrayList.add(new ItemSelect(getString(R.string.play_single_stream), R.drawable.ic_movie,false));
         }
         arrayList.add(new ItemSelect(getString(R.string.list_users), R.drawable.ic_user_octagon,true));
-       // arrayList.add(new ItemSelect(getString(R.string._downloads), R.drawable.iv_downloading,true));
+           arrayList.add(new ItemSelect(getString(R.string._downloads), R.drawable.iv_downloading,true));
 
         if (Boolean.TRUE.equals(spHelper.getIsSelect(SPHelper.TAG_IS_LOCAL_STORAGE)) && !isTvBox){
-          //  arrayList.add(new ItemSelect(getString(R.string._local_storage), R.drawable.ic_hard_drive,true));
+          arrayList.add(new ItemSelect(getString(R.string._local_storage), R.drawable.ic_hard_drive,true));
         }
 
         addSelectPage(arrayList);
