@@ -4,10 +4,10 @@
     <selectionStates>
       <SelectionState runConfigName="Streambox_v11.1.app">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2026-01-06T23:21:26.699953022Z">
+        <DropdownSelection timestamp="2026-01-08T18:50:54.828628726Z">
           <Target type="DEFAULT_BOOT">
             <handle>
-              <DeviceId pluginId="PhysicalDevice" identifier="serial=R58M33R05ZJ" />
+              <DeviceId pluginId="LocalEmulator" identifier="path=/home/tmousnia/.android/avd/Television_1080p.avd" />
             </handle>
           </Target>
         </DropdownSelection>
