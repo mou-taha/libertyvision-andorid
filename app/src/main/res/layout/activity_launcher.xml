@@ -26,6 +26,7 @@
             android:textStyle="bold"
             android:layout_marginBottom="@dimen/_2sdp"/>
 
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -40,14 +41,15 @@
                 android:layout_height="@dimen/_14sdp"
                 app:tint="?nsWhite"
                 android:contentDescription="@string/todo" />
-
             <TextView
-                android:textSize="@dimen/_11ssp"
-                android:layout_marginStart="@dimen/_5sdp"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginStart="@dimen/_14ssp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/encrypted_data_security"
-                android:textColor="?nsWhite"/>
+                android:text="@string/liberty_phrase"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                />
         </LinearLayout>
 
     </LinearLayout>
