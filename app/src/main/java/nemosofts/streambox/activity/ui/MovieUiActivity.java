@@ -222,9 +222,9 @@ public class MovieUiActivity extends AppCompatActivity {
         TextView appDate = findViewById(R.id.iv_app_date);
         try {
             @SuppressLint("SimpleDateFormat") DateFormat df = new SimpleDateFormat("EEE, d MMM yyyy");
-            String expDate = getString(R.string.expiration)+" "+ FormatUtils.convertIntToDate(spHelper.getExpDate(),
+            String userInfo ="Welcome : "+spHelper.getUserName()+", "+ getString(R.string.expiration)+" "+ FormatUtils.convertIntToDate(spHelper.getExpDate(),
                     "MMMM dd, yyyy");
-            appDate.setText(expDate);
+            appDate.setText(userInfo);
         } catch (Exception e) {
             ApplicationUtil.log(TAG, "Date formatting error", e);
         }
