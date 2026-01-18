@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">Liberty Vision</string>
+    <string name="app_name">Liberty Vue</string>
 
     <!-- Made with -->
-    <string name="made_with_in">Made With ❤ in Sri Lanka</string>
+    <string name="made_with_in">Made With ❤</string>
 
     <string name="categories">Categories</string>
     <string name="expiration">Expiration :</string>
